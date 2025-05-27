@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    font-family: 'Poppins', sans-serif;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap:8px;
+  }
+  
+  .logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+  .logo-text{
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .dropdown-menu li {
+    margin-bottom: 8px;
+  }
+  
+  .badge {
+    background-color: blue;
+    color: white;
+    font-size: 10px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    margin-left: 4px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sign-in,
+  .sign-up {
+    padding: 6px 12px;
+    border: 1px solid blue;
+    background: white;
+    color: blue;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;
+  }
+  
+  .sign-up {
+    background: blue;
+    color: white;
+  }
+  
+  /* Main */
+  .blog-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .page-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  
+  .blogs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+  
+  .blog-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+  }
+  
+  .blog-image {
+    background: #7b61ff;
+    height: 150px;
+  }
+  
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-content h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .blog-content p {
+    font-size: 13px;
+    color: gray;
+  }
+  
+  /* Pagination */
+  .pagination {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .page-number, .arrow {
+    display: inline-block;
+    margin: 0 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .page-number.active {
+    font-weight: bold;
+    color: blue;
+  }
